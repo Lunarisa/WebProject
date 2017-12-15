@@ -1,0 +1,27 @@
+#banner {
+	position: fixed;
+	width: 100%;
+	animation: banner 10s linear infinite;
+}
+@keyframes banner {
+	0% {
+		transform: translate(0%, 0%);
+	}
+	100% {
+		transform: translate(100%, 0%);
+	}
+}
+
+#banner2 {
+	position: fixed;
+	width: 100%;
+	animation: banner2 10s linear infinite;
+}
+@keyframes banner2 {
+	0% {
+		transform: translate(-100%, 0%);
+	}
+	100% {
+		transform: translate(0%, 0%);
+	}
+}
