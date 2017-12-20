@@ -26,6 +26,7 @@
 }
 
 .progress-bar {
+	background-color: #f44336;
 	text-align: center;
 	width: 0%;
 }
@@ -36,8 +37,22 @@
 @keyframes progress-bar {
 	0% {
 		width: 0%;
+		background-color: #f44336;
 	}
 	100% {
 		width: 100%;
+		background-color: #8bc34a;
 	}
+}
+
+html, body {
+	height: 100%;
+	margin: 0px;
+}
+
+.euro-background {
+	background-size: 33.33%;
+    background-image: url("../img/500€.png");
+	background-repeat: repeat;
+    background-position: center center;
 }
