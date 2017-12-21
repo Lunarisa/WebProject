@@ -78,6 +78,7 @@ html, body {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
+	z-index: -1;
 }
 .fallingBills span {
 	display: inline-block;
@@ -85,9 +86,10 @@ html, body {
 	height: 80px;
 	margin: -180px 40px 54px -34px;
 
+	background-image: url("../img/50€.png");
 	background-size: 100%;
 	background-repeat: no-repeat;
-	background-size: center center;
+	background-position: center center;
 
 	animation: fallingBills 10s infinite linear;
 }
@@ -129,7 +131,7 @@ html, body {
 @keyframes fallingBills {
 	0% {
 		opacity: 1;
-		transform: translate(0, 0px) rotateZ(0deg);
+		transform: translate(0px, 0px) rotateZ(0deg);
 	}
 	75% {
 		opacity: 1;
