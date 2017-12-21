@@ -64,11 +64,6 @@ html, body {
 	background-color : #4caf50 !important;
 }
 
-.vl {
-	border: 6px solid green;
-    height: 700px;
-}
-
 .euro-background {
 	background-size: 33.33%;
     background-image: url("../img/500€.png");
