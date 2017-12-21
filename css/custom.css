@@ -1,3 +1,8 @@
+html, body {
+	height: 100%;
+	margin: 0px;
+}
+
 .banner {
 	position: fixed;
 	width: 100%;
@@ -59,9 +64,9 @@
 	background-color : #4caf50 !important;
 }
 
-html, body {
-	height: 100%;
-	margin: 0px;
+.vl {
+	border: 6px solid green;
+    height: 700px;
 }
 
 .euro-background {

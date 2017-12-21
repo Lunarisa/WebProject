@@ -31,7 +31,7 @@
 				<input class="w3-input w3-border w3-round-large" type="text" name="adresse">
 				<label for="email">Email</label>
 				<input class="w3-input w3-border w3-round-large" type="email" name="email">
-				<label><a id="validated" href="#bank-modal" class="w3-button w3-blue w3-large modal-valid">Carte bancaire</a></label>
+				<label><a id="validated" href="#bank-modal" class="w3-button w3-margin-top w3-blue w3-large modal-valid">Carte bancaire</a></label>
 				<div id="bank-modal" class="w3-modal dynamic-display">
 					<div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width: 600px">
 						<div class="w3-center"><br>
@@ -39,11 +39,11 @@
 						</div>
 						<div class="w3-container">
 							<div class="w3-section">
-								<label for="code_bancaire"><b>Numéro de la carte</b></label>
+								<label for="code_bancaire"><strong>Numéro de la carte</strong></label>
 								<input class="w3-input w3-border w3-margin-bottom" type="text" maxlength="16" placeholder="N° carte bancaire" name="code_bancaire">
-								<label for="titulaire"><b>Titulaire</b></label>
+								<label for="titulaire"><strong>Titulaire</strong></label>
 								<input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Titulaire" name="titulaire">
-								<label><b>Date d'expiration</b></label>
+								<label><strong>Date d'expiration</strong></label>
 								<div class="w3-row">
 									<div class="w3-half">
 										<input class="w3-input w3-border w3-margin-bottom" type="number" name="mois" value="1" min="1" max="12">
@@ -52,14 +52,14 @@
 										<input class="w3-input w3-border w3-margin-bottom" type="number" name="annee" value="2017" min="2017">
 									</div>
 								</div>
-								<label for="crypto"><b>Cryptogramme</b></label>
+								<label for="crypto"><strong>Cryptogramme</strong></label>
 								<input class="w3-input w3-border" type="password" maxlength="3" placeholder="Cryptogramme" name="crypto">
 								<a href="#validated" class="w3-button w3-block w3-green w3-section w3-padding">Valider</a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<label><a href="#submit" class="w3-button w3-blue w3-large">Soumettre</a></label>
+				<label><a href="#submit" class="w3-button w3-margin-top w3-blue w3-large">Soumettre</a></label>
 				<div class="w3-light-grey w3-round" style="width: 100%">
 					<div class="w3-round progress-bar" id="submit">Traitement...</div>
 				</div>
