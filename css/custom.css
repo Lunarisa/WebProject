@@ -70,3 +70,73 @@ html, body {
 	background-repeat: repeat;
     background-position: center center;
 }
+
+.fallingBills {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.fallingBills span {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	margin: -180px 40px 54px -34px;
+
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: center center;
+
+	animation: fallingBills 10s infinite linear;
+}
+
+.fallingBills span:nth-child(3n+3) {
+	background-image: url("../img/500€.png");
+}
+.fallingBills span:nth-child(3n+2) {
+	background-image: url("../img/200€.png");
+}
+.fallingBills span:nth-child(5n+1) {
+	background-image: url("../img/100€.png");
+}
+.fallingBills span:nth-child(10n) {
+	background-image: url("../img/50€.png");
+}
+
+.fallingBills span:nth-child(5n+5) {
+	animation-delay: 1s;
+}
+.fallingBills span:nth-child(3n+2) {
+	animation-delay: 1.5s;
+}
+.fallingBills span:nth-child(2n+5) {
+	animation-delay: 1.7s;
+}
+.fallingBills span:nth-child(3n+5) {
+    animation-delay: 2.7s;
+}
+.fallingBills span:nth-child(7n+2) {
+    animation-delay: 3.5s;
+}
+.fallingBills span:nth-child(4n+5) {
+    animation-delay: 5.5s;
+}
+.fallingBills span:nth-child(4n+7) {
+    animation-delay: 8s;
+}
+@keyframes fallingBills {
+	0% {
+		opacity: 1;
+		transform: translate(0, 0px) rotateZ(0deg);
+	}
+	75% {
+		opacity: 1;
+		transform: translate(100px, 600px) rotateZ(270deg);
+	}
+	100% {
+		opacity: 0;
+		transform: translate(150px, 800px) rotateZ(360deg);
+	}
+}
