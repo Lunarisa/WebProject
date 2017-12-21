@@ -27,11 +27,13 @@
 
 .progress-bar {
 	background-color: #f44336;
+	opacity: 0;
 	text-align: center;
 	width: 0%;
 }
 .progress-bar:target
 {
+	opacity: 1;
 	animation: progress-bar 4s linear both;
 }
 @keyframes progress-bar {
@@ -43,6 +45,18 @@
 		width: 100%;
 		background-color: #8bc34a;
 	}
+}
+
+.dynamic-display {
+	display: none;
+}
+.dynamic-display:target {
+	display: block;
+}
+
+.modal-valid:target {
+	color : #fff !important;
+	background-color : #4caf50 !important;
 }
 
 html, body {
